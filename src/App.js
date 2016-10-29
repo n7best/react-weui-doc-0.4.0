@@ -9,7 +9,7 @@ import NoPreview from './pages/nopreview'
 const App = () =>
 (
   <Router history={browserHistory}>
-    <Route path="/" component={Root}>
+    <Route path="/react-weui-doc-0.4.0" component={Root}>
       <IndexRoute component={Home} />
       <Route path="docs/:id" component={Docs}>
         <IndexRoute component={NoPreview} />
