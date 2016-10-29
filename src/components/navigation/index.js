@@ -23,7 +23,7 @@ class Navigation extends Component {
         return this.props.data.map((doc, i)=>{
             return (
               <Link
-                to={`/docs/${i}`}
+                to={`/react-weui-doc-0.4.0/docs/${i}`}
                 className="navmenu__item"
                 activeClassName="active"
                 key={i}
@@ -42,7 +42,7 @@ class Navigation extends Component {
         return menus.map((item, i)=>{
             if(!this.state.searchFilter || item.name.toLowerCase().indexOf(this.state.searchFilter.toLowerCase()) > -1){
                 return (
-                    <Link className="weui_cell" activeClassName="active" key={i} to={`/docs/${this.props.current.id}/articles/${i}`}>
+                    <Link className="weui_cell" activeClassName="active" key={i} to={`/react-weui-doc-0.4.0/docs/${this.props.current.id}/articles/${i}`}>
                         <CellHeader>
                             <img src={item.icon} alt={item.name} className="navMenu--icon" />
                         </CellHeader>
