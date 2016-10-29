@@ -22,7 +22,7 @@ class Docs extends Component {
     }
 
     if(article){
-      this._fetchCode(article.docs)
+      this._fetchCode(article.example)
     }else{
       this.setState({
         loading: false
@@ -51,7 +51,7 @@ class Docs extends Component {
     })
     let article = nextProps.docs[nextProps.params.id].items[nextProps.params.aid]
     if(article){
-      this._fetchCode(article.docs)
+      this._fetchCode(article.example)
     }else{
       this.setState({
         loading: false
