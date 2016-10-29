@@ -16,23 +16,47 @@ class Docs extends Component {
     super(props);
     let article = this.props.docs[this.props.params.id].items[this.props.params.aid]
 
-    if(article){
-      let componentExample = article.example ? require(`../examples/${article.example}`) : false;
+    this.state = {
+      loading: true,
+      code: false
     }
 
-    this.state = {
-      code: typeof componentExample === 'undefined' ? false : componentExample
+    if(article){
+      this._fetchCode(article.docs)
+    }else{
+      this.setState({
+        loading: false
+      })
     }
 
   }
 
+  _fetchCode(doc){
+    fetch(`examples/${doc}`).then((res)=>res.text()).catch(error=>{
+        this.setState({
+            loading: false
+        })
+        alert('Loading article Fail, try again');
+    }).then(text=>{
+        //console.log(text)
+        this.setState({loading: false, code: text});
+    });
+  }
+
 
   componentWillReceiveProps(nextProps){
-    let article = nextProps.docs[nextProps.params.id].items[nextProps.params.aid]
-    let componentExample = article.example ? require(`../examples/${article.example}`) : false;
     this.setState({
-      code: componentExample
+      loading: true,
+      code: ''
     })
+    let article = nextProps.docs[nextProps.params.id].items[nextProps.params.aid]
+    if(article){
+      this._fetchCode(article.docs)
+    }else{
+      this.setState({
+        loading: false
+      })
+    }
   }
 
   render(){
@@ -41,7 +65,7 @@ class Docs extends Component {
     return (
       <SplitPane split="vertical" minSize={20} defaultSize="60%" primary="second">
           <div className="App__preview background--canvas flex-center">
-              {this.state.code ?
+              {this.state.code && !this.state.loading ?
               <div className="App__mobileview">
               <Preview
                   context={{}}

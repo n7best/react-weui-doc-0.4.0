@@ -1,0 +1,19 @@
+<div>
+<Dialog.Confirm title="Confirmation"
+    buttons={[
+        {
+            type: 'default',
+            label: 'Cancel',
+            onClick: ()=>alert('clicked')
+        },
+        {
+            type: 'primary',
+            label: 'Ok',
+            onClick: ()=>alert('clicked')
+        }
+    ]}
+    show={true}
+>
+    Sure？
+</Dialog.Confirm>
+</div>

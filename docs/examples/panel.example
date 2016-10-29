@@ -1,0 +1,98 @@
+<div>
+<Panel access>
+    <PanelHeader>
+        图文组合列表
+    </PanelHeader>
+    <PanelBody>
+        <MediaBox type="appmsg" href="javascript:void(0);">
+            <MediaBoxHeader><img src={iconSrc}/></MediaBoxHeader>
+            <MediaBoxBody>
+                <MediaBoxTitle>标题一</MediaBoxTitle>
+                <MediaBoxDescription>
+                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+                </MediaBoxDescription>
+            </MediaBoxBody>
+        </MediaBox>
+        <MediaBox type="appmsg" href="javascript:void(0);">
+            <MediaBoxHeader><img src={iconSrc}/></MediaBoxHeader>
+            <MediaBoxBody>
+                <MediaBoxTitle>标题二</MediaBoxTitle>
+                <MediaBoxDescription>
+                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+                </MediaBoxDescription>
+            </MediaBoxBody>
+        </MediaBox>
+    </PanelBody>
+    <PanelFooter href="javascript:void(0);">
+        查看更多
+    </PanelFooter>
+</Panel>
+
+<Panel access>
+    <PanelHeader>
+        文字组合列表
+    </PanelHeader>
+    <PanelBody>
+        <MediaBox type="text">
+            <MediaBoxTitle>标题一</MediaBoxTitle>
+            <MediaBoxDescription>
+                由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+            </MediaBoxDescription>
+        </MediaBox>
+        <MediaBox type="text">
+            <MediaBoxTitle>标题二</MediaBoxTitle>
+            <MediaBoxDescription>
+                由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+            </MediaBoxDescription>
+        </MediaBox>
+    </PanelBody>
+    <PanelFooter href="javascript:void(0);">
+        查看更多
+    </PanelFooter>
+</Panel>
+
+<Panel>
+    <PanelHeader>
+        小图文组合列表
+    </PanelHeader>
+    <PanelBody>
+        <MediaBox type="small_appmsg">
+            <Cells access>
+                <Cell href="javascript:;">
+                    <CellHeader><img src={iconSrc}/></CellHeader>
+                    <CellBody>
+                        <p>文字标题</p>
+                    </CellBody>
+                    <CellFooter/>
+                </Cell>
+                <Cell href="javascript:;">
+                    <CellHeader><img src={iconSrc}/></CellHeader>
+                    <CellBody>
+                        <p>文字标题</p>
+                    </CellBody>
+                    <CellFooter/>
+                </Cell>
+            </Cells>
+        </MediaBox>
+    </PanelBody>
+</Panel>
+
+<Panel>
+    <PanelHeader>
+        文字列表附来源
+    </PanelHeader>
+    <PanelBody>
+        <MediaBox type="text">
+            <MediaBoxTitle>标题一</MediaBoxTitle>
+            <MediaBoxDescription>
+                由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+            </MediaBoxDescription>
+            <MediaBoxInfo>
+                <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
+                <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
+                <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
+            </MediaBoxInfo>
+        </MediaBox>
+    </PanelBody>
+</Panel>
+</div>
