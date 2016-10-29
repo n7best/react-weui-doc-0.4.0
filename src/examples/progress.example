@@ -1,0 +1,9 @@
+<div>
+    <Progress value={0} onClick={()=>alert('clicked')} />
+    <br/>
+    <Progress value={25} onClick={()=>alert('clicked')} />
+    <br/>
+    <Progress value={50} onClick={()=>alert('clicked')} />
+    <br/>
+    <Progress value={75} onClick={()=>alert('clicked')} />
+</div>

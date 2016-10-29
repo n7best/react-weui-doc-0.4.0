@@ -1,0 +1,3 @@
+<div>
+    <Toast icon="loading" show={true}>Loading...</Toast>
+</div>

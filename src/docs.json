@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "1",
+    "name": "0.4.0",
+    "icon": "file-text-o",
+    "items":
+    [
+      {
+        "name": "ActionSheet",
+        "icon": "http://weui.github.io/weui/images/icon_nav_actionSheet.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/actionsheet.md",
+        "example" : "actionsheet.example"
+      },
+      {
+        "name": "Button",
+        "icon": "http://weui.github.io/weui/images/icon_nav_button.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/button.md",
+        "example" : "button.example"
+      },
+      {
+        "name": "Cell",
+        "icon": "http://weui.github.io/weui/images/icon_nav_cell.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/cell.md",
+        "example" : "cell.example"
+      },
+      {
+        "name": "Dialog",
+        "icon": "http://weui.github.io/weui/images/icon_nav_dialog.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/dialog.md",
+        "example" : "dialog.example"
+      },
+      {
+        "name": "Form",
+        "icon": "http://weui.github.io/weui/images/icon_nav_cell.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/form.md",
+        "example" : "form.example"
+      },
+      {
+        "name": "Grid",
+        "icon": "http://weui.github.io/weui/images/icon_nav_panel.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/grid.md",
+        "example" : "grid.example"
+      },
+      {
+        "name": "Icon",
+        "icon": "http://weui.github.io/weui/images/icon_nav_icons.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/icon.md",
+        "example" : "icon.example"
+      },
+      {
+        "name": "Mask",
+        "icon": "http://weui.github.io/weui/images/icon_nav_panel.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/mask.md"
+      },
+      {
+        "name": "Message",
+        "icon": "http://weui.github.io/weui/images/icon_nav_msg.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/msg.md",
+        "example" : "msg.example"
+      },
+      {
+        "name": "Panel",
+        "icon": "http://weui.github.io/weui/images/icon_nav_panel.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/panel.md",
+        "example" : "panel.example"
+      },
+      {
+        "name": "Progress",
+        "icon": "http://weui.github.io/weui/images/icon_nav_progress.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/progress.md",
+        "example" : "progress.example"
+      },
+      {
+        "name": "Toast",
+        "icon": "http://weui.github.io/weui/images/icon_nav_toast.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/toast.md",
+        "example" : "toast.example"
+      },
+      {
+        "name": "SearchBar",
+        "icon": "http://weui.github.io/weui/images/icon_nav_search_bar.png",
+        "docs": "https://raw.githubusercontent.com/weui/react-weui/master/docs/searchbar.md"
+      }
+    ]
+  }
+]
