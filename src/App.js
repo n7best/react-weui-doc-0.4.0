@@ -8,7 +8,7 @@ import NoPreview from './pages/nopreview'
 
 const App = () =>
 (
-  <Router>
+  <Router history={browserHistory}>
     <Route path="/" component={Root}>
       <IndexRoute component={Home} />
       <Route path="docs/:id" component={Docs}>
