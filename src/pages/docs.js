@@ -32,7 +32,7 @@ class Docs extends Component {
   }
 
   _fetchCode(doc){
-    fetch(`examples/${doc}`).then((res)=>res.text()).catch(error=>{
+    fetch(`/react-weui-doc-0.4.0/examples/${doc}`).then((res)=>res.text()).catch(error=>{
         this.setState({
             loading: false
         })
