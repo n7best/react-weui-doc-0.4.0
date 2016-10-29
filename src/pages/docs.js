@@ -17,27 +17,23 @@ class Docs extends Component {
     let article = this.props.docs[this.props.params.id].items[this.props.params.aid]
 
     this.state = {
-      loading: true,
+      loading: !!article,
       code: false
     }
 
     if(article){
       this._fetchCode(article.example)
-    }else{
-      this.setState({
-        loading: false
-      })
     }
 
   }
 
   _fetchCode(doc){
     if(!doc) return this.setState({loading: false, code: null})
-    fetch(`/react-weui-doc-0.4.0/examples/${doc}`).then((res)=>res.text()).catch(error=>{
+    fetch(!process.env.NODE_ENV ? doc : `/react-weui-doc-0.4.0${doc}`).then((res)=>res.text()).catch(error=>{
         this.setState({
             loading: false
         })
-        alert('Loading article Fail, try again');
+        alert('Loading code Fail, try again');
     }).then(text=>{
         //console.log(text)
         this.setState({loading: false, code: text});

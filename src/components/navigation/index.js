@@ -23,7 +23,7 @@ class Navigation extends Component {
         return this.props.data.map((doc, i)=>{
             return (
               <Link
-                to={`/react-weui-doc-0.4.0/docs/${i}`}
+                to={`/react-weui-doc-0.4.0/docs/${i}/articles/0`}
                 className="navmenu__item"
                 activeClassName="active"
                 key={i}

@@ -1,0 +1,78 @@
+<div>
+<CellsTitle>单选列表项</CellsTitle>
+<Form radio>
+    <FormCell radio>
+        <CellBody>标题文字</CellBody>
+        <CellFooter>
+            <Radio name="radio1" value="1" defaultChecked/>
+        </CellFooter>
+    </FormCell>
+    <FormCell radio>
+        <CellBody>标题文字</CellBody>
+        <CellFooter>
+            <Radio name="radio1" value="2"/>
+        </CellFooter>
+    </FormCell>
+</Form>
+
+<CellsTitle>复选列表项</CellsTitle>
+<Form checkbox>
+    <FormCell checkbox>
+        <CellHeader>
+            <Checkbox name="checkbox1" value="1"/>
+        </CellHeader>
+        <CellBody>标题文字</CellBody>
+    </FormCell>
+    <FormCell checkbox>
+        <CellHeader>
+            <Checkbox name="checkbox2" value="2" defaultChecked/>
+        </CellHeader>
+        <CellBody>标题文字</CellBody>
+    </FormCell>
+</Form>
+
+<CellsTitle>开关</CellsTitle>
+<Form>
+    <FormCell switch>
+        <CellBody>标题文字</CellBody>
+        <CellFooter>
+            <Switch/>
+        </CellFooter>
+    </FormCell>
+</Form>
+<CellsTitle>上传</CellsTitle>
+<Form>
+    <FormCell>
+        <CellBody>
+            <Uploader
+                title="图片上传"
+                maxCount={6}
+                files={[
+                    {
+                        url: iconSrc,
+                        onClick: e=>alert('事件测试')
+                    },
+                    {
+                        url: iconSrc
+                    },
+                    {
+                        url: iconSrc
+                    },
+                    {
+                        url: iconSrc,
+                        error: true
+                    },
+                    {
+                        url: iconSrc,
+                        status: '50%'
+                    }
+                ]}
+                onError={msg => alert(msg)}
+                onChange={(file,e) => {
+                    //your action
+                }}
+            />
+        </CellBody>
+    </FormCell>
+</Form>
+</div>

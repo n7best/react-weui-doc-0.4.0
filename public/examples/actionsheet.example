@@ -1,0 +1,22 @@
+<div>
+    <ActionSheet
+        menus={[{
+            label: '拍照',
+            onClick: ()=> {
+
+            }
+        }, {
+            label: '从手机相册选择',
+            onClick: ()=> {
+
+            }
+        }]}
+        actions={[
+            {
+                label: '取消',
+                onClick: ()=>alert('click hide')
+            }
+        ]}
+        show={true}
+    />
+</div>

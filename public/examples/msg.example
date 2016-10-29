@@ -1,0 +1,18 @@
+<div>
+     <Msg
+        type="success"
+        title="提交成功"
+        description="你的反馈我们已经收到"
+        buttons={[{
+            type: 'primary',
+            label: '确定',
+            onClick: ()=>alert('clicked')
+        }, {
+            type: 'default',
+            label: '取消',
+            onClick: ()=>alert('clicked')
+        }]}
+        extraText="查看详情"
+        extraHref="#"
+    />
+</div>

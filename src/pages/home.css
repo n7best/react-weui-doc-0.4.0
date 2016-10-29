@@ -32,6 +32,10 @@
 /*    transition: all .25s ease;*/
 /*}*/
 
+.Pane.vertical.Pane1 {
+    height: 100%;
+}
+
 .Resizer {
     position: relative;
     background: rgba(0, 0, 0, 0.45);
